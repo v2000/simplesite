@@ -1,4 +1,0 @@
-simplesite
-==========
-
-simple site
