@@ -1,0 +1,47 @@
+<ion-view title="List with firms">
+	<ion-content class="has-header">
+		<img class="logo" ng-src="{{playlist.firminfo.logo}}" alt="logo">
+		<h1>{{playlist.firmname}}</h1>
+		<div class="card" ng-show="error!=''">
+			<div class="item item-text-wrap">
+				<p ng-model="error">{{error}}</p>
+			</div>
+		</div>
+		<p>id: {{playlist.id}}</p>
+		<p>firm telephone: {{playlist.firminfo.telefon}}</p>
+		<p>Open mon-fra: {{playlist.firminfo.opentime}}</p>
+		<p>Open set-san: {{playlist.firminfo.opentimeholiday}}</p>
+		<p>About us: {{playlist.firminfo.info}}</p>
+		<p>Site: <a href="http://{{playlist.firminfo.site}}" target="_blank">{{playlist.firminfo.site}}</a></p>
+		<p>firm adress: {{playlist.firmadress}}</p>
+
+
+
+		<img ng-src="http://maps.googleapis.com/maps/api/staticmap?size=400x200&
+		markers=color:blue%7C{{playlist.firmadress}}&sensor=true_or_false" alt="firm">
+
+
+
+
+
+
+
+
+
+		<!--Show static images:-->
+		<!--<img ng-src="http://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&sensor=false" alt="firm">
+
+		<img ng-src="http://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&sensor=false" alt="firm">
+
+		<img ng-src="http://maps.googleapis.com/maps/api/staticmap?size=480x480&markers=
+		icon:http://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C
+		224+West+20th+Street+NY%7C75+9th+Ave+NY%7C700+E+9th+St+NY&sensor=true_or_false" alt="firm">
+
+		<img ng-src="http://maps.googleapis.com/maps/api/staticmap?size=512x512&maptype=roadmap\
+		&markers=size:mid%7Ccolor:red%7CSan+Francisco,CA%7COakland,CA%7CSan+Jose,CA&sensor=false" alt="firm">
+
+		<img ng-src="http://maps.googleapis.com/maps/api/staticmap?center=Williamsburg,Brooklyn,NY&zoom=13&size=400x200&
+		markers=color:blue%7Clabel:S%7C11211%7C11206%7C11222&sensor=true_or_false" alt="firm">-->
+
+	</ion-content>
+</ion-view>
